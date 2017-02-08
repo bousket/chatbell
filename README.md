@@ -3,7 +3,7 @@ Chat Bell
 
 Chat Bell is a tiny mod ringing a bell on player's name quote in chat.
 The functionality can be enabled/disabled by /chatbell command.
-Players preferences are saved on disk in <mod place>/chatbell by default
+Players preferences are saved on disk in <world>/chatbell by default
 
 Mod dependencies: none
 
