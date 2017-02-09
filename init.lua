@@ -26,4 +26,25 @@
 --  * Save players preferences on disk
 
 
-dofile(minetest.get_modpath(minetest.get_current_modname()).."/chatbell.lua")
+-- Chatbell config
+chatbell = {
+
+--sound = "coins"
+sound = "i-demand-attention",
+
+spam_time = 2, -- don t play another sound before this time in seconds
+
+use_settings = true, -- turn it to false to use chatbell for all players. Disable /chatbell command & settings on disk
+
+player_settings = {}, -- player related infos struct -- [player]: {enabled, last played time}
+
+} 
+
+
+
+local mod_path = minetest.get_modpath(minetest.get_current_modname())
+dofile(mod_path.."/chatbell.lua")
+
+if chatbell.use_settings then
+	dofile(mod_path.."/settings.lua")
+end
