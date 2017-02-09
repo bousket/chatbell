@@ -8,7 +8,18 @@ The command & players settings can be disabled. Chatbell is activated for all th
 
 Config in init.lua
 
+
 Mod dependencies: none
+
+
+Let the users chose their sound
+-------------------------------
+
+You can let users chose their sound using [Sounds Pack] (http://wiki.minetest.net/Sound_Packs).
+In init.lua:
+- set use_settings = false
+- set sound = chatbell_sound
+Then, users can place chatbell_sound.ogg of their choice in the shared sound folder.
 
 
 License
