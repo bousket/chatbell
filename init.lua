@@ -29,8 +29,8 @@
 -- Chatbell config
 chatbell = {
 
---sound = "coins"
-sound = "i-demand-attention",
+--sound = "chatbell_coins"
+sound = "chatbell_i-demand-attention",
 
 spam_time = 2, -- don t play another sound before this time in seconds
 
