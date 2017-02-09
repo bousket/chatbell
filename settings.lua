@@ -3,21 +3,15 @@
 local settings_file = minetest.get_worldpath() .. "/chatbell"
 
 
-
 -- Enable/Disable Sound Command
 minetest.register_chatcommand("chatbell", {
 	description = "Plays a sound when your name is quoted in chat (spam protection of ".. chatbell.spam_time .."s)",
-	privs = {
-		interact = true
-	},
 	func = function(name, param)
 		chatbell.player_settings[name].enabled = not chatbell.player_settings[name].enabled
 		save_settings()
 		return true, "Chat bell is " .. (chatbell.player_settings[name].enabled and "enabled" or "disabled") .. "."
 	end
 })
-
-
 
 
 local function load_settings()
@@ -34,7 +28,6 @@ local function load_settings()
 end
 
 load_settings()
-
 
 
 function save_settings()
