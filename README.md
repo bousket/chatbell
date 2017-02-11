@@ -26,6 +26,7 @@ License
 =======
 
 Copyright (C) 2017 Bousket
-Chat Bell code is licensed under the GNU LGPLv3+.
+Chat Bell code is licensed under CC0
+https://creativecommons.org/publicdomain/zero/1.0/
 
 For sounds: see sounds/credits.txt
